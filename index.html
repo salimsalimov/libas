@@ -1,10 +1,13 @@
-$results = mysql_query("  SELECT * FROM add_patchcord JOIN mobile_warehouse_cable_assembly ON add_patchcord.id = mobile_warehouse_cable_assembly.id_add_patchcord  where mobile_warehouse_cable_assembly.recipient='".$row["group_id"]."' AND  mobile_warehouse_cable_assembly.remained_cable_assembly > 0 ",$link);
-    if(mysql_num_rows( $results) > 0){
-    $rows = mysql_fetch_array($results);
-    echo '<option style="font-size: 15px;" value=""></option>';
-    do {
-            if(!empty($rows["remained_cable_assembly"])){
-            echo '<option style="font-size: 15px;" value="'.$rows["id"].'" >'.$rows["name"].' &nbsp;( '.$rows["remained_cable_assembly"].' шт ) </option>';
-            }
-    }while($rows = mysql_fetch_array($results));                 
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    df sdf sd
+    
+</body>
+</html>
